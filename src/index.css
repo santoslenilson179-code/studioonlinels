@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-editorial: 'Cormorant Garamond', Georgia, serif;
+    
+    /* Core User Palette */
+    --bg-main: #080B0D;        /* 🖤 Preto Glacial */
+    --bg-card: #151B1E;        /* 🌑 Grafite Frio */
+    --primary: #BDEFF2;        /* 🧊 Azul Gelo */
+    --accent: #72DDE3;         /* 💎 Ciano Glacial */
+    --text-title: #F7FBFC;     /* ❄️ Branco Neve */
+    --text-secondary: #AEBFC3; /* 🌫️ Cinza Névoa */
+
+    --dark-950: #080B0D;
+    --dark-900: #101619;
+    --dark-800: #151B1E;
+    --dark-700: #1E272B;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080B0D;
+    color: #AEBFC3;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    color: #F7FBFC;
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+/* Custom glacial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E272B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #72DDE3;
+}
+
+/* Glassmorphism with deep glacial & ice blue accents */
+.glass {
+  background: rgba(21, 27, 30, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(114, 221, 227, 0.12);
+}
+
+.glass-panel {
+  background: rgba(21, 27, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(114, 221, 227, 0.15);
+}
+
+.glass-ice-panel {
+  background: rgba(21, 27, 30, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(189, 239, 242, 0.3);
+}
+
+.dot-pattern {
+  background-image: radial-gradient(#72DDE3 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.ice-glow {
+  box-shadow: 0 0 35px -5px rgba(189, 239, 242, 0.35);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 35px -5px rgba(114, 221, 227, 0.35);
+}
+
+/* Backward-compatible utility classes mapped to glacial palette */
+.gold-text,
+.text-gold,
+.text-accent-cyan {
+  color: #72DDE3; /* 💎 Ciano Glacial para destaques */
+}
+
+.text-primary-ice {
+  color: #BDEFF2; /* 🧊 Azul Gelo */
+}
+
+.text-snow-white {
+  color: #F7FBFC; /* ❄️ Branco Neve */
+}
+
+.text-mist-gray {
+  color: #AEBFC3; /* 🌫️ Cinza Névoa */
+}
+
+.ice-border {
+  border-color: #BDEFF2;
+}
+
+.cyan-border {
+  border-color: #72DDE3;
+}
+
+.ice-btn-primary {
+  background-color: #BDEFF2;
+  color: #080B0D;
+}
+.ice-btn-primary:hover {
+  background-color: #F7FBFC;
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

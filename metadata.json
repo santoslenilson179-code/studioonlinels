@@ -1,0 +1,6 @@
+{
+  "name": "Studio Online LS",
+  "description": "Studio Online LS - Fotos profissionais com IA. Sua imagem com presença e autoridade para empresários e profissionais. WhatsApp: 77 98153-9584 • Criador de sites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
